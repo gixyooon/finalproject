@@ -304,7 +304,7 @@ def run_mini_game():
             screen.blit(mini_game_bg, (i * mini_game_bg_width + mini_game_scroll, 0))
 
         # Display the number of UI hearts in the top left corner
-        font = pygame.font.Font("PowerPixel.ttf", 36)
+        font = pygame.font.Font("PowerPixel.ttf", 20)
         ui_text = font.render(f'Hearts: {num_highlighted_ui}', True, (0, 0, 0))
         screen.blit(ui_text, (20, 20))
         
@@ -678,5 +678,7 @@ while run:
     pygame.display.update()
     
 
+pygame.quit()
+sys.exit()
 pygame.quit()
 sys.exit()
